@@ -1,6 +1,6 @@
 /**
  * @mainpage  LibDriver IR_REMOTE
- * @brief     libdriver ir_remote is a full function driver of ir_remote and it can run in both MCU and Linux platform.
+ * @brief     LibDriver IR_REMOTE is a full function driver of IR_REMOTE and it can run in both MCU and Linux platform.
  * @version   1.0.0
  * @author    Shifeng Li
  *
