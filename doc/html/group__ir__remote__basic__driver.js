@@ -6,7 +6,7 @@ var group__ir__remote__basic__driver =
       [ "status", "structir__remote__s.html#ade818037fd6c985038ff29656089758d", null ]
     ] ],
     [ "ir_remote_time_s", "structir__remote__time__s.html", [
-      [ "s", "structir__remote__time__s.html#a2dee666f0c1fe072c549ff86b1d0a8ab", null ],
+      [ "s", "structir__remote__time__s.html#a963840de6724d0090ffb30f4b6e6f8fc", null ],
       [ "us", "structir__remote__time__s.html#aacd10328101739a1c5576f0fbb6fd8e7", null ]
     ] ],
     [ "ir_remote_decode_s", "structir__remote__decode__s.html", [
