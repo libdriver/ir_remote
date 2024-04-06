@@ -90,7 +90,7 @@ typedef struct ir_remote_s
  */
 typedef struct ir_remote_time_s
 {
-    uint32_t s;         /**< second */
+    uint64_t s;         /**< second */
     uint32_t us;        /**< microsecond */
 } ir_remote_time_t;
 

@@ -43,7 +43,7 @@
 /**
  * @brief timer var definition
  */
-static uint32_t gs_second = 0;        /**< second */
+static uint64_t gs_second = 0;        /**< second */
 
 /**
  * @brief     timer callback
