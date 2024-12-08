@@ -59,7 +59,7 @@ uint8_t ir_remote_basic_irq_handler(void)
 
 /**
  * @brief     basic example init
- * @param[in] *callback points to an irq callback address
+ * @param[in] *callback pointer to an irq callback address
  * @return    status code
  *            - 0 success
  *            - 1 init failed

@@ -60,7 +60,7 @@ uint8_t ir_remote_receive_test_irq_handler(void)
 
 /**
  * @brief     interface receive callback
- * @param[in] *data points to an ir_remote_t structure
+ * @param[in] *data pointer to an ir_remote_t structure
  * @note      none
  */
 static void a_receive_callback(ir_remote_t *data)
@@ -111,7 +111,7 @@ static void a_receive_callback(ir_remote_t *data)
 
 /**
  * @brief     receive test
- * @param[in] times is the test times
+ * @param[in] times test times
  * @return    status code
  *            - 0 success
  *            - 1 test failed

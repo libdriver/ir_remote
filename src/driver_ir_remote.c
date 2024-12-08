@@ -64,8 +64,8 @@
 
 /**
  * @brief     check the frame time
- * @param[in] check is the checked time
- * @param[in] t is the standard time
+ * @param[in] check checked time
+ * @param[in] t standard time
  * @return    status code
  *            - 0 success
  *            - 1 checked failed
@@ -85,7 +85,7 @@ static inline uint8_t a_check_frame(uint16_t check, uint16_t t)
 
 /**
  * @brief     ir_remote nec repeat decode
- * @param[in] *handle points to an ir_remote handle structure
+ * @param[in] *handle pointer to an ir_remote handle structure
  * @note      none
  */
 static void a_ir_remote_nec_repeat_decode(ir_remote_handle_t *handle)
@@ -154,7 +154,7 @@ static void a_ir_remote_nec_repeat_decode(ir_remote_handle_t *handle)
 
 /**
  * @brief     ir_remote nec decode
- * @param[in] *handle points to an ir_remote handle structure
+ * @param[in] *handle pointer to an ir_remote handle structure
  * @note      none
  */
 static void a_ir_remote_nec_decode(ir_remote_handle_t *handle)
@@ -442,7 +442,7 @@ static void a_ir_remote_nec_decode(ir_remote_handle_t *handle)
 
 /**
  * @brief     irq handler
- * @param[in] *handle points to an ir_remote handle structure
+ * @param[in] *handle pointer to an ir_remote handle structure
  * @return    status code
  *            - 0 success
  *            - 1 run failed
@@ -515,7 +515,7 @@ uint8_t ir_remote_irq_handler(ir_remote_handle_t *handle)
 
 /**
  * @brief     initialize the chip
- * @param[in] *handle points to an ir_remote handle structure
+ * @param[in] *handle pointer to an ir_remote handle structure
  * @return    status code
  *            - 0 success
  *            - 1 gpio initialization failed
@@ -575,7 +575,7 @@ uint8_t ir_remote_init(ir_remote_handle_t *handle)
 
 /**
  * @brief     close the chip
- * @param[in] *handle points to an ir_remote handle structure
+ * @param[in] *handle pointer to an ir_remote handle structure
  * @return    status code
  *            - 0 success
  *            - 2 handle is NULL
@@ -600,7 +600,7 @@ uint8_t ir_remote_deinit(ir_remote_handle_t *handle)
 
 /**
  * @brief      get chip's information
- * @param[out] *info points to an ir_remote info structure
+ * @param[out] *info pointer to an ir_remote info structure
  * @return     status code
  *             - 0 success
  *             - 2 handle is NULL
