@@ -148,40 +148,40 @@ typedef struct ir_remote_info_s
 
 /**
  * @brief     initialize ir_remote_handle_t structure
- * @param[in] HANDLE points to an ir_remote handle structure
- * @param[in] STRUCTURE is ir_remote_handle_t
+ * @param[in] HANDLE pointer to an ir_remote handle structure
+ * @param[in] STRUCTURE ir_remote_handle_t
  * @note      none
  */
 #define DRIVER_IR_REMOTE_LINK_INIT(HANDLE, STRUCTURE)         memset(HANDLE, 0, sizeof(STRUCTURE))
 
 /**
  * @brief     link timestamp_read function
- * @param[in] HANDLE points to an ir_remote handle structure
- * @param[in] FUC points to a timestamp_read function address
+ * @param[in] HANDLE pointer to an ir_remote handle structure
+ * @param[in] FUC pointer to a timestamp_read function address
  * @note      none
  */
 #define DRIVER_IR_REMOTE_LINK_TIMESTAMP_READ(HANDLE, FUC)    (HANDLE)->timestamp_read = FUC
 
 /**
  * @brief     link delay_ms function
- * @param[in] HANDLE points to an ir_remote handle structure
- * @param[in] FUC points to a delay_ms function address
+ * @param[in] HANDLE pointer to an ir_remote handle structure
+ * @param[in] FUC pointer to a delay_ms function address
  * @note      none
  */
 #define DRIVER_IR_REMOTE_LINK_DELAY_MS(HANDLE, FUC)          (HANDLE)->delay_ms = FUC
 
 /**
  * @brief     link debug_print function
- * @param[in] HANDLE points to an ir_remote handle structure
- * @param[in] FUC points to a debug_print function address
+ * @param[in] HANDLE pointer to an ir_remote handle structure
+ * @param[in] FUC pointer to a debug_print function address
  * @note      none
  */
 #define DRIVER_IR_REMOTE_LINK_DEBUG_PRINT(HANDLE, FUC)       (HANDLE)->debug_print = FUC
 
 /**
  * @brief     link receive_callback function
- * @param[in] HANDLE points to an ir_remote handle structure
- * @param[in] FUC points to a receive_callback function address
+ * @param[in] HANDLE pointer to an ir_remote handle structure
+ * @param[in] FUC pointer to a receive_callback function address
  * @note      none
  */
 #define DRIVER_IR_REMOTE_LINK_RECEIVE_CALLBACK(HANDLE, FUC)  (HANDLE)->receive_callback = FUC
@@ -199,7 +199,7 @@ typedef struct ir_remote_info_s
 
 /**
  * @brief      get chip's information
- * @param[out] *info points to an ir_remote info structure
+ * @param[out] *info pointer to an ir_remote info structure
  * @return     status code
  *             - 0 success
  *             - 2 handle is NULL
@@ -209,7 +209,7 @@ uint8_t ir_remote_info(ir_remote_info_t *info);
 
 /**
  * @brief     irq handler
- * @param[in] *handle points to an ir_remote handle structure
+ * @param[in] *handle pointer to an ir_remote handle structure
  * @return    status code
  *            - 0 success
  *            - 1 run failed
@@ -221,7 +221,7 @@ uint8_t ir_remote_irq_handler(ir_remote_handle_t *handle);
 
 /**
  * @brief     initialize the chip
- * @param[in] *handle points to an ir_remote handle structure
+ * @param[in] *handle pointer to an ir_remote handle structure
  * @return    status code
  *            - 0 success
  *            - 1 gpio initialization failed
@@ -233,7 +233,7 @@ uint8_t ir_remote_init(ir_remote_handle_t *handle);
 
 /**
  * @brief     close the chip
- * @param[in] *handle points to an ir_remote handle structure
+ * @param[in] *handle pointer to an ir_remote handle structure
  * @return    status code
  *            - 0 success
  *            - 2 handle is NULL

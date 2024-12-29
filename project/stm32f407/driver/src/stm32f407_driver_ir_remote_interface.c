@@ -47,7 +47,7 @@ static uint64_t gs_second = 0;        /**< second */
 
 /**
  * @brief     timer callback
- * @param[in] us is the timer cnt
+ * @param[in] us timer cnt
  * @note      none
  */
 static void gs_tim_irq(uint32_t us)
@@ -81,7 +81,7 @@ uint8_t ir_remote_interface_timer_init(void)
 
 /**
  * @brief     interface timestamp read
- * @param[in] *t points to an ir_remote_time structure
+ * @param[in] *t pointer to an ir_remote_time structure
  * @return    status code
  *            - 0 success
  *            - 1 read failed
@@ -97,7 +97,7 @@ uint8_t ir_remote_interface_timestamp_read(ir_remote_time_t *t)
 
 /**
  * @brief     interface delay ms
- * @param[in] ms
+ * @param[in] ms time
  * @note      none
  */
 void ir_remote_interface_delay_ms(uint32_t ms)
@@ -107,7 +107,7 @@ void ir_remote_interface_delay_ms(uint32_t ms)
 
 /**
  * @brief     interface print format data
- * @param[in] fmt is the format data
+ * @param[in] fmt format data
  * @note      none
  */
 void ir_remote_interface_debug_print(const char *const fmt, ...)
@@ -127,7 +127,7 @@ void ir_remote_interface_debug_print(const char *const fmt, ...)
 
 /**
  * @brief     interface receive callback
- * @param[in] *data points to an ir_remote_t structure
+ * @param[in] *data pointer to an ir_remote_t structure
  * @note      none
  */
 void ir_remote_interface_receive_callback(ir_remote_t *data)

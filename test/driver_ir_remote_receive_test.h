@@ -61,7 +61,7 @@ uint8_t ir_remote_receive_test_irq_handler(void);
 
 /**
  * @brief     receive test
- * @param[in] times is the test times
+ * @param[in] times test times
  * @return    status code
  *            - 0 success
  *            - 1 test failed

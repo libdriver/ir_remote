@@ -48,7 +48,7 @@ volatile uint8_t g_flag;                   /**< interrupt flag */
 
 /**
  * @brief     interface receive callback
- * @param[in] *data points to an ir_remote_t structure
+ * @param[in] *data pointer to an ir_remote_t structure
  * @note      none
  */
 static void a_receive_callback(ir_remote_t *data)
@@ -96,8 +96,8 @@ static void a_receive_callback(ir_remote_t *data)
 
 /**
  * @brief     ir_remote full function
- * @param[in] argc is arg numbers
- * @param[in] **argv is the arg address
+ * @param[in] argc arg numbers
+ * @param[in] **argv arg address
  * @return    status code
  *            - 0 success
  *            - 1 run failed
@@ -370,8 +370,8 @@ uint8_t ir_remote(uint8_t argc, char **argv)
 
 /**
  * @brief     main function
- * @param[in] argc is arg numbers
- * @param[in] **argv is the arg address
+ * @param[in] argc arg numbers
+ * @param[in] **argv arg address
  * @return    status code
  *             - 0 success
  * @note      none
