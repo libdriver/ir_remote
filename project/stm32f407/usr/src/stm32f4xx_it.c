@@ -167,7 +167,7 @@ void USART2_IRQHandler(void)
 
 /**
  * @brief     uart error callback
- * @param[in] *huart points to a uart handle
+ * @param[in] *huart pointer to a uart handle
  * @note      none
  */
 void HAL_UART_ErrorCallback(UART_HandleTypeDef *huart)
@@ -177,7 +177,7 @@ void HAL_UART_ErrorCallback(UART_HandleTypeDef *huart)
 
 /**
  * @brief     uart rx receive callback
- * @param[in] *huart points to a uart handle
+ * @param[in] *huart pointer to a uart handle
  * @note      none
  */
 void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
@@ -196,7 +196,7 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 
 /**
  * @brief     uart tx finished callback
- * @param[in] *huart points to a uart handle
+ * @param[in] *huart pointer to a uart handle
  * @note      none
  */
 void HAL_UART_TxCpltCallback(UART_HandleTypeDef *huart)
@@ -225,7 +225,7 @@ void TIM2_IRQHandler(void)
 
 /**
  * @brief     tim period elapsed callback
- * @param[in] *htim points to a tim handle
+ * @param[in] *htim pointer to a tim handle
  * @note      none
  */
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
