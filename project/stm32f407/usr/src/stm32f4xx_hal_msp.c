@@ -61,7 +61,7 @@ void HAL_MspDeInit(void)
 
 /**
  * @brief     uart hal init
- * @param[in] *huart points to a uart handle
+ * @param[in] *huart pointer to a uart handle
  * @note      none
  */
 void HAL_UART_MspInit(UART_HandleTypeDef *huart)
@@ -118,7 +118,7 @@ void HAL_UART_MspInit(UART_HandleTypeDef *huart)
 
 /**
  * @brief     uart hal deinit
- * @param[in] *huart points to a uart handle
+ * @param[in] *huart pointer to a uart handle
  * @note      none
  */
 void HAL_UART_MspDeInit(UART_HandleTypeDef* huart)
@@ -149,7 +149,7 @@ void HAL_UART_MspDeInit(UART_HandleTypeDef* huart)
 
 /**
  * @brief     tim hal init
- * @param[in] *htim points to a tim handle
+ * @param[in] *htim pointer to a tim handle
  * @note      none
  */
 void HAL_TIM_Base_MspInit(TIM_HandleTypeDef *htim)
@@ -169,7 +169,7 @@ void HAL_TIM_Base_MspInit(TIM_HandleTypeDef *htim)
 
 /**
  * @brief     tim hal deinit
- * @param[in] *htim points to a tim handle
+ * @param[in] *htim pointer to a tim handle
  * @note      none
  */
 void HAL_TIM_Base_MspDeInit(TIM_HandleTypeDef *htim)
