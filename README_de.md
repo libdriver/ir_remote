@@ -24,7 +24,7 @@ Wenn eine Taste auf der Fernbedienung gedrückt wird, besteht die gesendete Nach
 6. Die logische 8-Bit-Inverse des Befehls.
 7. Ein letzter Impulsstoß von 562,5 μs, um das Ende der Nachrichtenübertragung anzuzeigen.
 
-LibDriver IR_REMOTE ist der voll funktionsfähige Treiber von ir_remote, der von LibDriver gestartet wird. Es bietet eine NEC-IR-Remote-Decodierungsfunktion. LibDriver ist MISRA-konform.
+LibDriver IR_REMOTE ist der voll funktionsfähige Treiber von IR_REMOTE, der von LibDriver gestartet wird. Es bietet eine NEC-IR-Remote-Decodierungsfunktion. LibDriver ist MISRA-konform.
 
 ### Inhaltsverzeichnis
 
