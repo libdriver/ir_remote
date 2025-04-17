@@ -24,7 +24,7 @@ NEC IR 전송 프로토콜은 메시지 비트의 펄스 거리 인코딩을 사
 6. 명령의 8비트 논리 반전.
 7. 메시지 전송의 끝을 알리는 최종 562.5μs 펄스 버스트.
 
-LibDriver IR_REMOTE는 LibDriver에 의해 시작된 ir_remote의 전체 기능 드라이버입니다. NEC IR 원격 디코딩 기능을 제공합니다. LibDriver는 MISRA를 준수합니다.
+LibDriver IR_REMOTE는 LibDriver에 의해 시작된 IR_REMOTE의 전체 기능 드라이버입니다. NEC IR 원격 디코딩 기능을 제공합니다. LibDriver는 MISRA를 준수합니다.
 
 ### 콘텐츠
 

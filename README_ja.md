@@ -24,7 +24,7 @@ NEC IR 伝送プロトコルは、メッセージ ビットのパルス距離エ
 6. コマンドの 8 ビット論理反転。
 7. メッセージ送信の終了を示す最後の 562.5μs パルス バースト。
 
-LibDriver IR_REMOTE は、LibDriver によって起動される ir_remote の全機能ドライバーです。 NEC IR リモートデコード機能を提供します。 LibDriver は MISRA 準拠です。
+LibDriver IR_REMOTE は、LibDriver によって起動される IR_REMOTEの全機能ドライバーです。 NEC IR リモートデコード機能を提供します。 LibDriver は MISRA 準拠です。
 
 ### 目次
 
