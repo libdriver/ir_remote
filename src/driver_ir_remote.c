@@ -73,13 +73,13 @@
  */
 static inline uint8_t a_check_frame(uint16_t check, uint16_t t)
 {
-    if (abs(check - t) > (int)((float)(t) * IR_REMOTE_MAX_RANGE))        /* check the time */
+    if (abs((int)check - (int)t) > (int)((float)(t) * IR_REMOTE_MAX_RANGE))        /* check the time */
     {
-        return 1;                                                        /* check failed */
+        return 1;                                                                  /* check failed */
     }
     else
     {
-        return 0;                                                        /* success return 0 */
+        return 0;                                                                  /* success return 0 */
     }
 }
 
@@ -472,8 +472,9 @@ uint8_t ir_remote_irq_handler(ir_remote_handle_t *handle)
         
         return 1;                                                          /* return error */
     }
-    diff = (int64_t)(t.s - handle->last_time.s) * 1000000 + 
-           (int64_t)(t.us - handle->last_time.us) ;                        /* now - last time */
+    diff = (int64_t)((int64_t)t.s - 
+           (int64_t)handle->last_time.s) * 1000000 + 
+           (int64_t)((int64_t)t.us - (int64_t)handle->last_time.us);       /* now - last time */
     if (diff - (int64_t)200000L >= 0)                                      /* if over 1s, force reset */
     {
         handle->decode_len = 0;                                            /* reset the decode */
