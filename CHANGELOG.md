@@ -1,3 +1,9 @@
+## 1.0.7 (2025-07-30)
+
+## Bug Fixes
+
+- fix timestamp bugs
+
 ## 1.0.6 (2025-04-16)
 
 ## Bug Fixes
