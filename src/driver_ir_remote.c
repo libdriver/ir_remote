@@ -150,6 +150,8 @@ static void a_ir_remote_nec_repeat_decode(ir_remote_handle_t *handle)
         data.status = IR_REMOTE_STATUS_REPEAT;                                            /* frame invalid */
         handle->receive_callback(&data);                                                  /* run the callback */
     }
+    /* 关键：为了让下一次4个边沿再次触发repeat解码 */
+    handle->decode_len = 0;   // <<< 新增这一行
 }
 
 /**
