@@ -1,3 +1,9 @@
+## 1.0.8 (2025-08-21)
+
+## Bug Fixes
+
+- fix repeat bugs contributed by **[naizhe579](https://github.com/naizhe579)** .
+
 ## 1.0.7 (2025-07-30)
 
 ## Bug Fixes
