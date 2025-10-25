@@ -24,7 +24,7 @@ When a key is pressed on the remote controller, the message transmitted consists
 6. The 8-bit logical inverse of the command.
 7. A final 562.5μs pulse burst to signify the end of message transmission.
 
-LibDriver IR_REMOTE is a full-featured driver of IR_REMOTE launched by LibDriver. It provides NEC IR remote decoding function. LibDriver is MISRA compliant.
+LibDriver IR_REMOTE is a full-featured driver for IR_REMOTE, launched by LibDriver. It provides NEC IR remote decoding and additional features. LibDriver is MISRA compliant.
 
 ### Table of Contents
 

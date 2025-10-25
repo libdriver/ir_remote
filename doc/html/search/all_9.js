@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['us_92',['us',['../structir__remote__time__s.html#aacd10328101739a1c5576f0fbb6fd8e7',1,'ir_remote_time_s']]]
+  ['receive_5fcallback_0',['receive_callback',['../structir__remote__handle__s.html#ad1623ddb4629519e1df24295b0d463fd',1,'ir_remote_handle_s']]]
 ];
