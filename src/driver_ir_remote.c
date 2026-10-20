@@ -71,7 +71,7 @@
  *            - 1 checked failed
  * @note      none
  */
-static inline uint8_t a_check_frame(uint16_t check, uint16_t t)
+static inline uint8_t a_check_frame(uint32_t check, uint32_t t)
 {
     if (abs((int)check - (int)t) > (int)((float)(t) * IR_REMOTE_MAX_RANGE))        /* check the time */
     {
@@ -147,7 +147,7 @@ static void a_ir_remote_nec_repeat_decode(ir_remote_handle_t *handle)
     {
         data.address = handle->last_code.address;                                         /* set address 0x00 */
         data.command = handle->last_code.command;                                         /* set command 0x00 */
-        data.status = IR_REMOTE_STATUS_REPEAT;                                            /* frame invalid */
+        data.status = IR_REMOTE_STATUS_REPEAT;                                            /* frame repeat */
         handle->receive_callback(&data);                                                  /* run the callback */
     }
     handle->decode_len = 0;                                                               /* in order to trigger repeat decoding for the next four edges */
@@ -495,7 +495,7 @@ uint8_t ir_remote_irq_handler(ir_remote_handle_t *handle)
                (int64_t)handle->decode[1].t.s) * 1000000 + 
                (int64_t)((int64_t)handle->decode[2].t.us -
                (int64_t)handle->decode[1].t.us);                           /* diff time */
-        if (a_check_frame((uint16_t)diff, IR_REMOTE_CHECK_START_LOW) == 0) /* check the frame */
+        if (a_check_frame((uint32_t)diff, IR_REMOTE_CHECK_START_LOW) == 0) /* check the frame */
         {
             a_ir_remote_nec_decode(handle);                                /* try to decode */
         }
@@ -506,7 +506,7 @@ uint8_t ir_remote_irq_handler(ir_remote_handle_t *handle)
                (int64_t)handle->decode[1].t.s) * 1000000 + 
                (int64_t)((int64_t)handle->decode[2].t.us -
                (int64_t)handle->decode[1].t.us);                           /* diff time */
-        if (a_check_frame((uint16_t)diff, IR_REMOTE_CHECK_REPEAT) == 0)    /* check the frame */
+        if (a_check_frame((uint32_t)diff, IR_REMOTE_CHECK_REPEAT) == 0)    /* check the frame */
         {
             a_ir_remote_nec_repeat_decode(handle);                         /* try to decode */
         }
